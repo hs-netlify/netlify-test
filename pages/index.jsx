@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
+          Get started by editing{" "}
           <code className={styles.code}>pages/index.js</code>
         </p>
 
@@ -50,14 +50,41 @@ export default function Home() {
             </p>
           </a>
         </div>
-        <form data-netlify='true' method='POST' name='Signup' actions='/success'>
-          <input name='Username' type='text' placeholder='username' />
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          action="/api/hello-world"
+        >
+          <p>
+            <label>
+              Your Name: <input type="text" name="name" />
+            </label>
+          </p>
+          <p>
+            <label>
+              Your Email: <input type="email" name="email" />
+            </label>
+          </p>
+          <p>
+            <label>
+              Your Role:{" "}
+              <select name="role[]" multiple>
+                <option value="leader">Leader</option>
+                <option value="follower">Follower</option>
+              </select>
+            </label>
+          </p>
+          <p>
+            <label>
+              Message: <textarea name="message"></textarea>
+            </label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
         </form>
       </main>
-
-      <footer className={styles.footer}>
-        Get Rid of vercel banner
-      </footer>
     </div>
-  )
+  );
 }
