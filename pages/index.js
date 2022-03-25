@@ -50,6 +50,9 @@ export default function Home() {
             </p>
           </a>
         </div>
+        <form data-netlify='true' method='POST' name='Signup' actions='/success'>
+          <input name='Username' type='text' placeholder='username' />
+        </form>
       </main>
 
       <footer className={styles.footer}>
