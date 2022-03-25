@@ -58,18 +58,18 @@ export default function Home() {
         >
           <p>
             <label>
-              Your Name: <input type="text" name="name" />
+              Your Name: <input type="text" name="name" value="name" />
             </label>
           </p>
           <p>
             <label>
-              Your Email: <input type="email" name="email" />
+              Your Email: <input type="email" name="email" value="email" />
             </label>
           </p>
           <p>
             <label>
               Your Role:{" "}
-              <select name="role[]" multiple>
+              <select value="role" name="role[]" multiple>
                 <option value="leader">Leader</option>
                 <option value="follower">Follower</option>
               </select>
@@ -77,7 +77,7 @@ export default function Home() {
           </p>
           <p>
             <label>
-              Message: <textarea name="message"></textarea>
+              Message: <textarea value="message" name="message"></textarea>
             </label>
           </p>
           <p>
