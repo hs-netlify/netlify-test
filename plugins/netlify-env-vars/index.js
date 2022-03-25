@@ -1,4 +1,3 @@
-import { processEnv } from "@next/env";
 import * as fs from "fs";
 
 module.exports = {
