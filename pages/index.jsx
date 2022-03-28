@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import envVars from "../vars/env.json";
 
 export default function Home() {
   return (
@@ -84,6 +85,7 @@ export default function Home() {
             <button type="submit">Send</button>
           </p>
         </form>
+        <pre>{JSON.stringify(envVars)}</pre>
       </main>
     </div>
   );
