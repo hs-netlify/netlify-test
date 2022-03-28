@@ -1,9 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import envVars from "../vars/env.json";
 import fs from "fs";
 
-const envVars = fs.readFile("../vars/env.json", (err) => console.log(err));
+// const envVars = fs.readFile("../vars/env.json", (err) => console.log(err));
 
 console.log("Env Vars", envVars);
 
