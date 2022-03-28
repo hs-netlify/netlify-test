@@ -3,5 +3,10 @@
   to = "/.netlify/functions/:splat" 
   status = 200
 
+[[redirects]]
+  from = "/search/"
+  to = "https://google.com"
+  status = 200
+
 [[plugins]]
-  package = "/plugins/netlify-env-vars"
+package = "netlify-plugin-inline-functions-env"
