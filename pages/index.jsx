@@ -1,9 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import * as envVars from "./vars/env.js";
-
-console.log("Env Vars", envVars);
 
 export default function Home() {
   return (
