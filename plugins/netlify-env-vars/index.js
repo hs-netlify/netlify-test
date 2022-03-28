@@ -10,6 +10,6 @@ module.exports = {
 
     let jsonEnvs = JSON.stringify(envs);
 
-    fs.writeFile("../vars/env.json", jsonEnvs);
+    fs.writeFile("../vars/env.json", jsonEnvs, (err) => console.log(err));
   },
 };
