@@ -87,6 +87,7 @@ export default function Home() {
             <button type="submit">Send</button>
           </p>
         </form>
+        <pre>{envVars}</pre>
       </main>
     </div>
   );
