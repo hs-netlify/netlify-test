@@ -10,6 +10,6 @@ module.exports = {
 
     let jsonEnvs = JSON.stringify(envs);
 
-    fs.writeFile("../vars/env.json", jsonEnvs, "utf8");
+    fs.writeFile("../vars/env.json", jsonEnvs);
   },
 };
